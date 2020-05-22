@@ -8,7 +8,7 @@ description: >-
 
 {% file src="../.gitbook/assets/scribble.pdf" caption="Path to \`offload\` Semantics" %}
 
-After each step below, test that it works and perform a pull-request:
+After each step below, test that it works and perform a pull-request \(delete unnecessary files beforehand, so that PR only shows relevant changes\):
 
 **Splitter Pass 1**:
 
