@@ -6,8 +6,7 @@ description: >-
 
 # Trillium Implementation Milestones
 
-{% file src="../.gitbook/assets/scribble.pdf" caption="Path to \`offload\` Semantics" %}
-
+{% file src="../.gitbook/assets/scribble.pdf" caption="Path to \`offload\` Semantics" %} 
 After each step below, test that it works and perform a pull-request: 
 
 **Splitter Pass 1**: 
@@ -38,8 +37,15 @@ After each step below, test that it works and perform a pull-request:
 
 * [ ] Add `begin/end` block delimiters:
   * represent the obvious, "naive" approach to delimiting vissue blocks
+  * try using `begin/end` in vvadd
 
-* 
+* [ ] Port Neil's GEMM to TrilliumC-asm
+  * experiment using `begin/end` first, then `until_next`
+
+* [ ] Port Phil's Stencil to TrilliumC-asm
+
+
+ 
 **Splitter Pass 2**: 
 
 * [ ] Remove the need for labels altogether
