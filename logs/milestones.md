@@ -30,12 +30,14 @@ After each step below, test that it works and perform a pull-request:
 * [ ] Give names to vector block delimiters: 
   * `until_next`
   * `return` 
-* [ ] actually parse vissue block keys, rather than looking for hardcoded "vector init", "vector body", ..
-
+  * actually parse vissue block keys, rather than looking for hardcoded "vector init", "vector body", ..
     - mark each vissue key with prefix "trillium vissue"
 
   * as before, glue the vissue block \(in vector.s\) where the corresponding vissue key lies \(in scalar.s\)
     * IMPORTANT QUESTION: how are vissue blocks delineated in general?
+
+* [ ] Add `begin/end` block delimiters:
+  * represent the obvious, "naive" approach to delimiting vissue blocks
 
 * 
 **Splitter Pass 2**: 
