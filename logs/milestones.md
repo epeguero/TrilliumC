@@ -28,15 +28,18 @@ After each step below, test that it works and perform a pull-request \(delete un
 
 **Gluer Pass 1**:
 
-* [ ] Give names to vector block delimiters:
+* [x] Give names to vector block delimiters:
   * `until_next`
   * `return` 
   * actually parse vissue block keys, rather than looking for hardcoded "vector init", "vector body", ..
   * mark each vissue key with prefix "trillium vissue"
   * as before, glue the vissue block \(in vector.s\) where the corresponding vissue key lies \(in scalar.s\)
   * IMPORTANT QUESTION: how are vissue blocks delineated in general?
-* [ ] Add `begin/end` block delimiters:
+* [ ] Implement `begin/end` block delimiters + docs \(Tuesday\):
   * represent the obvious, "naive" approach to delimiting vissue blocks
+* [ ] Test `begin/end` on `vvadd` , and report back crucial instructions missed in this approach \(Wednesday\) 
+* [ ] Port `gemm` to Trilliasm using `begin/end` and `until_next` \(Wednesday-Thursday\)
+
 * **Splitter Pass 2**:
 * [ ] Remove the need for labels altogether
   * Vector-SIMCv2 enhancement: replace vissue instructions with psuedo-vissue instructions, with single param being the vissue key itself \(rather than a label pointing to a vissue key\)
